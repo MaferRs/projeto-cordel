@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Amatic SC', cursive;
+    --font3: 'Indie Flower', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    min-width: 100vw;
+    font-family: var(--font1);
+    background-color:#f7e9e8;
+}
+
+header{
+    text-align: center;
+    background-color:#a37671;
+    color: whitesmoke ; 
+    box-shadow: inset 6px 6px 10px 2px #00000033;  
+    text-shadow: 1.7px 1.7px 0px #0000007a;
+}
+
+header > h1{
+    padding-top: 45px;
+    font-family: var(--font2);
+    font-variant: small-caps;
+    font-size: 10vw;
+   
+   
+}
+
+header > p{
+    padding-bottom:45px;
+   
+}
+
+header a, footer a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bolder;  
+}
+
+header a:hover, footer a:hover{
+   
+    text-decoration:underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    line-height: 2em;
+    padding-left:30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: #f7e9e8d2;
+    color: black;
+
+}
+
+section.imagem{
+    background-color: #b18989e8;
+    color: whitesmoke ;
+    box-shadow: inset 6px 6px 10px 0px #0000005d;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.imagem >p {
+    display: inline-block;
+    padding: 10px;
+    background-color: #b18989ea ;
+    border-radius: 8px;
+    text-shadow: 1.5px 1.5px 0px #000000af;
+
+}
+section#img01{
+    background-image:url('../imagens/plants.jpg');
+    background-position: center center;
+   
+
+}
+section#img02{
+    background-image: url('../imagens/sutterlin.jpg');
+    background-position:left center;
+   
+}
+
+footer{
+    background-color: #a37671;
+    text-align: center;
+    color:whitesmoke ;
+    padding: 6px;
+}
